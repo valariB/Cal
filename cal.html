@@ -1,0 +1,37 @@
+
+<body>
+<div class="container">
+  <h1>Tip calculator</h1>
+  <div id="calulator">
+    <form role="form">
+      <div class="form-group">
+      <label>
+        How much was your bill?<br>
+        <input type="text" id="billAmount" class="form-control" placeholder="Enter amount">
+      </label>
+      <label>
+        How was your service?<br>
+        <select class="form-control" id="serviceQuality">
+          <option value="" disabled selected>Select your option</option>
+          <option value="13.5">Tampa</option>
+          <option value="0.20">Good</option>
+          <option value="0.15">Okay</option>
+          <option value="0.10">Poor</option>
+          <option value="0.05">Terrible</option>
+        </select>
+      </label>
+      <label>How many people are sharing the bill?<br>
+        <input type="text" id="people" class="form-control" placeholder="Enter number">
+      </label>
+        <label><button class="btn btn-primary btn-block" id="calculate" >Calculate</button>
+        </label>
+    
+      </div><!--form group-->  
+    </form>
+  </div><!--calculator-->
+  <div id="totalTip">
+      <sup>$ </sup><span id="tip">0.00</span>
+        <small>each<small>
+  </div><!--total tip-->
+</div><!--container-->
+</body>
